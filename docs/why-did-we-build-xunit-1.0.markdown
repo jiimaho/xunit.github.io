@@ -27,7 +27,7 @@ While any one of these reasons would not necessarily have been sufficient to cre
  * `[Ignore]` is expressed using the Skip= parameter on [Test].
  * `[SetUp]` and `[TearDown]` are removed in favor of constructors and IDisposable.
  * `[ExpectedException]` was replaced with Assert.Throws (or Record.Exception, which provides better adherence to the 3A pattern).
- * `[TestFixtureSetup]` and `[TestFixtureTearDown]` are removed in favor of implementing reusable fixture data classes, which are attached to test classes by having them implement `IUseFixture<T>`.
+ * `[TestFixtureSetup]` and `[TestFixtureTearDown]` are removed in favor of implementing reusable fixture data classes, which are attached to test classes by having them implement `IClassFixture<T>`.
 
 ## Language Features
 
